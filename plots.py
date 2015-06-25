@@ -9,7 +9,7 @@ def plot_polygon(pol):
     plt.figure(1, figsize=(3,3))
     plt.plot(dots[:,0],dots[:,1],lw=5)
     plt.grid()
-    axis('equal');
+    plt.axis('equal');
 
 def plot_solution(sol):
     
@@ -25,4 +25,4 @@ def plot_solution(sol):
     
     plt.plot(initial[:,0],initial[:,1])
     plt.plot(final[:,0],final[:,1])
-    axis('equal');
+    plt.axis('equal');
