@@ -17,8 +17,8 @@ def plot_solution(sol):
     n = sol.shape[1]
     plt.figure(1, figsize=(8,8))
     
-    initial = np.reshape(np.append(solution[0,:,:],solution[0,0,:]), [n+1,2])
-    final = np.reshape(np.append(solution[steps-1,:,:],solution[steps-1,0,:]), [n+1,2])
+    initial = np.reshape(np.append(sol[0,:,:],sol[0,0,:]), [n+1,2])
+    final = np.reshape(np.append(sol[steps-1,:,:],sol[steps-1,0,:]), [n+1,2])
     for i in xrange(0,n):
         bug = sol[:,i,:]
         plt.plot(bug[:,0], bug[:,1])
